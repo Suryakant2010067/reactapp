@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Padauk', sans-serif;
+    background-color: aliceblue;
+   
+}
+
+p,h1,h2,h3,h4,h5,h6,span,button,img
+{
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    color: rgb(219, 132, 74);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 10px;
+}
+button:focus,button:active {
+    border-bottom: 2px solid rgb(219, 132, 74);
+    border-radius: 2px;
+ 
+}
+button:hover {
+    background-color:  rgb(219, 132, 74);
+   color: #fff;
+   border-radius: 2px;
+}
+ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right:30px;
+    
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+}
+.title
+{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+
+}
+.line
+{
+    width: 80px;
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: rgb(219, 132, 74);
+    margin-bottom: 30px;
+}
+
+.singleitem {
+    margin-bottom: 50px;
+}
+.price
+{
+    color:rgb(219, 132, 74);
+    font-weight: bold;
+
+}
+.hr_line
+{
+    height: 1.5px;
+    background-color: #dbd5d5c7;
+    margin-bottom: 17px;
+    margin-top: 3px;
+}
+.food_menu_app
+{
+    padding: 10px 40px;
+}
+
+.singleitem img
+{
+    width: 250px;
+    height: 180px;
+    border:3px solid rgb(228, 187, 159);
+    border-radius:3px;
+    object-fit: cover;
+    margin-right: 20px;
+    float: left;
+    background-color: rgb(228, 187, 159);
+    
+}
+.menu_category
+{
+    margin-bottom: 50px;
+}
+.item_details {
+    display: flex;
+    flex-direction: column;
+    
+}
+.item_details_top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.item_details_top p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.item_details_bottom p {
+    font-size: 19px;
+    color: #818181;
+    text-align: justify;
+}
+
+@media(min-width:992px) and (max-width:1125px)
+{
+    .singleitem {
+        width: 100%;
+    }
+}
+@media(max-width:533px)
+{
+    .singleitem {
+    
+        display: flex;
+        flex-direction: column;
+       
+    }
+    ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .singleitem img {
+        margin-bottom: 20px;
+    }
+}
